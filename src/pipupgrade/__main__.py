@@ -2,7 +2,7 @@
 import sys
 
 # imports - module imports
-from pipupgrade.commands import command as main
+from shank.commands import command as main
 
 if __name__ == "__main__":
     main()

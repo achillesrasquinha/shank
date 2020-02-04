@@ -1,12 +1,12 @@
 # imports - compatibility imports
-from pipupgrade._compat import HTTPError
+from shank._compat import HTTPError
 
 # imports - test imports
 import pytest
 
 # imports - standard imports
-from pipupgrade         import request as req
-from pipupgrade._compat import string_types
+from shank         import request as req
+from shank._compat import string_types
 
 def test_get():
     res  = req.get("https://httpbin.org/get")

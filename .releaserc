@@ -3,10 +3,10 @@
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
         ["@semantic-release/exec", {
-            "prepareCmd": "echo ${nextRelease.version} > src/pipupgrade/VERSION"
+            "prepareCmd": "echo ${nextRelease.version} > src/shank/VERSION"
         }],
         ["@semantic-release/git", {
-             "assets": "src/pipupgrade/VERSION",
+             "assets": "src/shank/VERSION",
             "message": "chore(release): Bumped to Version ${nextRelease.version}\n\n${nextRelease.notes}" 
         }],
         "@semantic-release/github"

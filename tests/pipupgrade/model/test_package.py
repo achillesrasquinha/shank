@@ -1,27 +1,27 @@
-from pipupgrade.model.package import (
+from shank.model.package import (
     _get_pypi_info,
     _get_package_version,
     _get_pip_info
 )
-from pipupgrade.__attr__ import (
+from shank.__attr__ import (
     __name__    as NAME,
     __author__
 )
-from pipupgrade import semver
+from shank import semver
 
 def test___get_pypi_info():
-    info = _get_pypi_info("pipupgrade")
+    info = _get_pypi_info("shank")
     assert info["author"] == "Achilles Rasquinha"
 
 def test__get_package_version():
-    version = _get_package_version("pipupgrade")
+    version = _get_package_version("shank")
     semver.parse(version)
 
 def test__get_pip_info():
-    packages = _get_pip_info("pipupgrade", "pytest")
+    packages = _get_pip_info("shank", "pytest")
 
-    assert packages["pipupgrade"]["name"]      == NAME
-    assert packages["pipupgrade"]["author"]    == __author__
+    assert packages["shank"]["name"]      == NAME
+    assert packages["shank"]["author"]    == __author__
 
     assert packages["pytest"]["name"]          == "pytest"
     assert packages["pytest"]["license"]       == "MIT license"

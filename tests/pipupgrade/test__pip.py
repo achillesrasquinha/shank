@@ -5,11 +5,11 @@ import subprocess
 import pytest
 
 # imports - module imports
-from pipupgrade         import _pip
-from pipupgrade._compat import string_types
+from shank         import _pip
+from shank._compat import string_types
 
 def test_imports():
-    from pipupgrade._pip import (
+    from shank._pip import (
         parse_requirements          as _,
         InstallRequirement          as _,
         # get_installed_distributions as _,
@@ -39,10 +39,10 @@ def test_call(tmpdir):
     tempfile  = directory.join("tmp.log")
     path      = string_types(tempfile)
 
-    _pip.call("install", "pipupgrade")
-    assert_pip_call(_pip.call("install", "pipupgrade", quiet = True))
+    _pip.call("install", "shank")
+    assert_pip_call(_pip.call("install", "shank", quiet = True))
     
-    _pip.call("install", "pipupgrade", log = path)
+    _pip.call("install", "shank", log = path)
     assert tempfile.read()
 
     # assert_pip_call(_pip.call("list", output = True))

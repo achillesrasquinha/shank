@@ -6,7 +6,7 @@ import subprocess
 import pytest
 
 # imports - module imports
-from pipupgrade.__attr__ import (
+from shank.__attr__ import (
     read,
     pardir,
     strip,
@@ -14,7 +14,7 @@ from pipupgrade.__attr__ import (
     sequence_filter,
     get_revision
 )
-from pipupgrade._compat  import string_types
+from shank._compat  import string_types
 
 def call(*args, **kwargs):
     subprocess.call(args, **kwargs)

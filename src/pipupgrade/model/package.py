@@ -5,12 +5,12 @@ import 	os.path as osp
 import 	re
 
 # imports - module imports
-from pipupgrade.__attr__    import __name__ as NAME
-from pipupgrade 	 		import _pip, semver, request as req, db, log
-from pipupgrade.tree 		import Node as TreeNode
-from pipupgrade.util.string import kebab_case, strip
-from pipupgrade._compat		import iteritems, string_types
-from pipupgrade.config		import Settings
+from shank.__attr__    import __name__ as NAME
+from shank 	 		import _pip, semver, request as req, db, log
+from shank.tree 		import Node as TreeNode
+from shank.util.string import kebab_case, strip
+from shank._compat		import iteritems, string_types
+from shank.config		import Settings
 
 logger  	= log.get_logger()
 _db			= db.get_connection()

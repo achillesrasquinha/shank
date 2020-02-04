@@ -1,5 +1,5 @@
 # imports - compatibility imports
-from pipupgrade._compat import (
+from shank._compat import (
     urlopen,
     Request,
     urlencode,
@@ -11,13 +11,13 @@ from pipupgrade._compat import (
 import json
 
 # imports - module imports
-from pipupgrade.request.response import Response
-from pipupgrade.util.string      import safe_encode
-from pipupgrade.log              import get_logger
+from shank.request.response import Response
+from shank.util.string      import safe_encode
+from shank.log              import get_logger
 
 logger = get_logger()
 
-# YAGNI: This patched "requests" works only for pipupgrade's use-cases.
+# YAGNI: This patched "requests" works only for shank's use-cases.
 
 def get(*args, **kwargs):
     logger.info("Dispatching GET request with arguments %s and parameters %s." % (

@@ -4,18 +4,18 @@ import re
 import json
 
 # imports - module imports
-from pipupgrade.model         	import Registry
-from pipupgrade.commands.util 	import cli_format
-from pipupgrade.table      	  	import Table
-from pipupgrade.tree			import Node as TreeNode
-from pipupgrade.util.string     import pluralize, strip
-from pipupgrade.util.system   	import read, write, popen, which
-from pipupgrade.util.array		import squash
-from pipupgrade 		      	import (_pip, cli, semver,
+from shank.model         	import Registry
+from shank.commands.util 	import cli_format
+from shank.table      	  	import Table
+from shank.tree			import Node as TreeNode
+from shank.util.string     import pluralize, strip
+from shank.util.system   	import read, write, popen, which
+from shank.util.array		import squash
+from shank 		      	import (_pip, cli, semver,
 	log, parallel
 )
-from pipupgrade.exception		import PopenError
-from pipupgrade._compat			import string_types
+from shank.exception		import PopenError
+from shank._compat			import string_types
 
 logger = log.get_logger()
 
@@ -319,7 +319,7 @@ def get_registry_from_pip(pip_path, user = False, sync = False, outdated = True,
 		build_dependency_tree = build_dependency_tree, jobs = jobs)
 
 	logger.info("Packages within `pip` %s found: %s..." % (pip_path, registry.packages))
-	# _pip.get_installed_distributions() # https://github.com/achillesrasquinha/pipupgrade/issues/13
+	# _pip.get_installed_distributions() # https://github.com/achillesrasquinha/shank/issues/13
 
 	return registry
 

@@ -1,8 +1,8 @@
 import os.path as osp
 
 # imports - compatibility imports
-from pipupgrade.commands    import command
-from pipupgrade.util._dict  import merge_dict
+from shank.commands    import command
+from shank.util._dict  import merge_dict
 
 # imports - test imports
 import pytest

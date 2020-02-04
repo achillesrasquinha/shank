@@ -1,5 +1,5 @@
 # imports - module imports
-from pipupgrade import parallel
+from shank import parallel
 
 def test_pool():
     def _assert(pool):

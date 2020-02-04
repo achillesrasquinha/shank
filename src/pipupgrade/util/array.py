@@ -1,7 +1,7 @@
 # pylint: disable=E1101
 
 # imports - compatibility imports
-from pipupgrade._compat import _is_python_version
+from shank._compat import _is_python_version
 
 # imports - standard imports
 import itertools

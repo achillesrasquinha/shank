@@ -1,5 +1,5 @@
 # imports - standard imports
-from pipupgrade.cli.parser import get_args
+from shank.cli.parser import get_args
 
 def test_args():
     def _get_arg(args, arg):

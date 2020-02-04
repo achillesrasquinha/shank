@@ -1,5 +1,5 @@
 # imports - compatibility imports
-from pipupgrade._compat import string_types
+from shank._compat import string_types
 
 def _render_tree(node, depth = 0, indent = 2, formatter = None):
     spacing     = (indent * " ") * depth

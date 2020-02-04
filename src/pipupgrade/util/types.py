@@ -1,9 +1,9 @@
 # pylint: disable=E1101
 
 # imports - compatibility imports
-from pipupgrade             import _compat
-from pipupgrade._compat     import zip, _is_python_version
-from pipupgrade.util._dict  import dict_from_list
+from shank             import _compat
+from shank._compat     import zip, _is_python_version
+from shank.util._dict  import dict_from_list
 
 # imports - standard imports
 import sys

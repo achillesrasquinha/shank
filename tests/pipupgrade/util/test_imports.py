@@ -1,4 +1,4 @@
-from pipupgrade.util.imports import HandlerRegistry, import_handler
+from shank.util.imports import HandlerRegistry, import_handler
 
 def test_handler_registry():
     registry = HandlerRegistry()
@@ -12,6 +12,6 @@ def test_handler_registry():
 
 def test_import_handler():
     assert import_handler("os")         == __import__("os")
-    assert import_handler("pipupgrade") == __import__("pipupgrade")
+    assert import_handler("shank") == __import__("shank")
     
-    assert import_handler("pipupgrade.util.imports.import_handler") == import_handler
+    assert import_handler("shank.util.imports.import_handler") == import_handler

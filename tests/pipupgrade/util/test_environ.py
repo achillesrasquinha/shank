@@ -2,10 +2,10 @@
 import pytest
 
 # imports - module imports
-from pipupgrade.util.environ import getenvvar, getenv, value_to_envval
+from shank.util.environ import getenvvar, getenv, value_to_envval
 
 def test_getenvvar():
-    assert getenvvar("FOOBAR")                  == "PIPUPGRADE_FOOBAR"
+    assert getenvvar("FOOBAR")                  == "shank_FOOBAR"
     assert getenvvar("FOOBAR", prefix = False)  == "FOOBAR"
 
 def test_getenv():

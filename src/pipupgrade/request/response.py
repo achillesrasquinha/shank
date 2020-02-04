@@ -1,5 +1,5 @@
 # imports - compatibility imports
-from pipupgrade._compat import HTTPError
+from shank._compat import HTTPError
 
 # imports - standard imports
 import json

@@ -2,7 +2,7 @@
 .venv
 .vscode
 ci
-docker/pipupgrade
+docker/shank
 .appveyor.yml
 .env
 .gitignore

@@ -2,11 +2,11 @@
 import os.path      as osp
 
 # imports - module imports
-from pipupgrade             import __name__ as NAME, __version__
-from pipupgrade.util.system import pardir, makedirs, touch
-from pipupgrade.util.types  import auto_typecast
-from pipupgrade.util._dict  import autodict
-from pipupgrade._compat     import iteritems, configparser as cp, string_types
+from shank             import __name__ as NAME, __version__
+from shank.util.system import pardir, makedirs, touch
+from shank.util.types  import auto_typecast
+from shank.util._dict  import autodict
+from shank._compat     import iteritems, configparser as cp, string_types
 
 PATH            = autodict()
 PATH["BASE"]    = pardir(__file__)

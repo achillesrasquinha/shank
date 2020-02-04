@@ -1,5 +1,5 @@
 # imports - compatibility imports
-from pipupgrade._compat import iteritems
+from shank._compat import iteritems
 
 # imports - standard imports
 import os, os.path as osp
@@ -9,11 +9,11 @@ import subprocess  as sp
 from   distutils.spawn import find_executable
 
 # imports - module imports
-from pipupgrade.exception   import PopenError
-from pipupgrade.util.string import strip, safe_decode
-from pipupgrade._compat     import iteritems
-from pipupgrade.log         import get_logger
-from pipupgrade._compat     import string_types
+from shank.exception   import PopenError
+from shank.util.string import strip, safe_decode
+from shank._compat     import iteritems
+from shank.log         import get_logger
+from shank._compat     import string_types
 
 logger = get_logger()
 

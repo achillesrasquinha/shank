@@ -5,9 +5,9 @@ BASEDIR					= $(shell pwd)
 
 ENVIRONMENT			   ?= development
 
-PROJECT					= pipupgrade
+PROJECT					= shank
 
-PROJDIR					= ${BASEDIR}/src/pipupgrade
+PROJDIR					= ${BASEDIR}/src/shank
 TESTDIR					= ${BASEDIR}/tests
 DOCSDIR					= ${BASEDIR}/docs
 

@@ -1,7 +1,7 @@
 ### Frequently Asked Questions
 
 * [How do I upgrade `pip` itself?](#how-do-i-upgrade-pip-itself)
-* [How do I upgrade `pipupgrade` itself?](#how-do-i-upgrade-pipupgrade-itself)
+* [How do I upgrade `shank` itself?](#how-do-i-upgrade-shank-itself)
 * [How do I upgrade a Python Project?](#how-do-i-upgrade-a-python-project)
 * [How do I update a requirements.txt file?](#how-do-i-update-a-requirementstxt-file)
 * [How do I perform a dry run?](#how-do-i-perform-a-dry-run)
@@ -12,38 +12,38 @@
 ---
 
 ```
-$ pipupgrade --pip
+$ shank --pip
 ```
 
 Use the `--pip` flag to ensure your `pip` is up-to-date. You can also set the 
-environment variable `PIPUPGRADE_PIP` to `true`. `pipupgrade` would then 
+environment variable `shank_PIP` to `true`. `shank` would then 
 attempt to upgrade all pip executables it's able to discover and upgrade 
 them parallely. If you wish to upgrade a specific `pip` executable, use the 
 `--pip-path` flag. For example, if you'd like to upgrade `pip3` executable only, 
 the command then would be
 
 ```
-$ pipupgrade --pip --pip-path pip3
+$ shank --pip --pip-path pip3
 ```
 
 The `--pip` flag enures to upgrade pip before it attempts to upgrade all other 
 packages.
 
-### How do I upgrade `pipupgrade` itself?
+### How do I upgrade `shank` itself?
 ---
 
 ```
-$ pipupgrade --self
+$ shank --self
 ```
 
-Use the `--self` flag to ensure your `pipupgrade` is up-to-date. `pipupgrade`
+Use the `--self` flag to ensure your `shank` is up-to-date. `shank`
  will then attempt to upgrade itself and exit execution.
 
 ### How do I upgrade a Python Project?
 ---
 
 ```
-$ pipupgrade --project "<PATH_TO_PYTHON_PROJECT>"
+$ shank --project "<PATH_TO_PYTHON_PROJECT>"
 ```
 
 The `--project` flag attempts to discover and update `requirements*.txt` files 
@@ -51,42 +51,42 @@ within the entire project directory. It also discovers `Pipfile`
 and if found, attempts to updates `Pipfile` and `Pipfile.lock`.
 
 In order to discover requirement files recursively, use the `--force` flag
- or set the environment variable `PIPUPGRADE_FORCE` to `true`.
+ or set the environment variable `shank_FORCE` to `true`.
 
 ```
-$ pipupgrade --project "<PATH_TO_PYTHON_PROJECT>" --force
+$ shank --project "<PATH_TO_PYTHON_PROJECT>" --force
 ```
 
 ### How do I update a requirements.txt file?
 ---
 
 ```
-$ pipupgrade --requirements "<PATH_TO_REQUIREMENTS_FILE>"
+$ shank --requirements "<PATH_TO_REQUIREMENTS_FILE>"
 ```
 
 ### How do I perform a dry run?
 ---
 
 ```
-$ pipupgrade --check
+$ shank --check
 ```
 
 Use the `--check` flag to perform a dry run. You can also set the 
-environment variable `PIPUPGRADE_DRY_RUN` to `true`.
+environment variable `shank_DRY_RUN` to `true`.
 
 ### How do I view a dependency graph?
 ---
 
 ```
-$ pipupgrade --format tree
+$ shank --format tree
 ```
 
 <div align="center">
-  <img src="docs/source/assets/demos/pipupgrade-format-tree.gif">
+  <img src="docs/source/assets/demos/shank-format-tree.gif">
 </div>
 
 The dependency graph also highlights any conflicting dependencies. 
-You can also set the environment variable `PIPUPGRADE_DISPLAY_FORMAT` to `tree`.
+You can also set the environment variable `shank_DISPLAY_FORMAT` to `tree`.
  If you avoid using the `--latest` flag, the tree format ensures to avoid
  child dependencies that break changes.
 
@@ -94,5 +94,5 @@ You can also set the environment variable `PIPUPGRADE_DISPLAY_FORMAT` to `tree`.
 ---
 
 ```
-$ pipupgrade "<PACKAGE_1>" "<PACKAGE_2>"
+$ shank "<PACKAGE_1>" "<PACKAGE_2>"
 ```

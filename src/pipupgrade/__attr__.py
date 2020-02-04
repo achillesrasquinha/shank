@@ -61,11 +61,11 @@ path                        = dict()
 path["base"]                = pardir(__file__)
 path["version"]             = osp.join(path["base"], "VERSION")
 
-__name__                    = "pipupgrade"
-__command__                 = "pipupgrade"
+__name__                    = "shank"
+__command__                 = "shank"
 __version__                 = strip(read(path["version"]))
 __build__                   = get_revision(pardir(path["base"], 2), short = True, raise_err = False)
-__url__                     = "https://github.com/achillesrasquinha/pipupgrade"
+__url__                     = "https://github.com/achillesrasquinha/shank"
 __author__                  = "Achilles Rasquinha"
 __email__                   = "achillesrasquinha@gmail.com"
 __description__             = "UPGRADE ALL THE PIP PACKAGES!"

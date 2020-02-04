@@ -1,5 +1,5 @@
 # imports - module imports
-from pipupgrade.semver import parse, difference
+from shank.semver import parse, difference
 
 # imports - test imports
 import pytest

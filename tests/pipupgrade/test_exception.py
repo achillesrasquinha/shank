@@ -2,18 +2,18 @@
 import subprocess as sp
 
 # imports - module imports
-from pipupgrade.util.system import popen
-from pipupgrade.exception   import (
-    PipupgradeError,
+from shank.util.system import popen
+from shank.exception   import (
+    shankError,
     PopenError
 )
 
 # imports - test imports
 import pytest
 
-def test_pipupgrade_error():
-    with pytest.raises(PipupgradeError):
-        raise PipupgradeError
+def test_shank_error():
+    with pytest.raises(shankError):
+        raise shankError
 
 def test_popen_error():
     with pytest.raises(PopenError):
@@ -21,6 +21,6 @@ def test_popen_error():
 
     assert isinstance(
         PopenError(0, "echo foobar"),
-        (PipupgradeError, sp.CalledProcessError)
+        (shankError, sp.CalledProcessError)
     )
-    assert isinstance(PipupgradeError(), Exception)
+    assert isinstance(shankError(), Exception)

@@ -1,5 +1,5 @@
 # imports - module imports
-from    pipupgrade import cli
+from    shank import cli
 
 # imports - test imports
 import  pytest

@@ -1,8 +1,8 @@
 # imports - standard imports
 import subprocess as sp
 
-class PipupgradeError(Exception):
+class ShankError(Exception):
     pass
 
-class PopenError(PipupgradeError, sp.CalledProcessError):
+class PopenError(ShankError, sp.CalledProcessError):
     pass

@@ -1,1 +1,1 @@
-docker run --rm -it achillesrasquinha/pipupgrade "$@"
+docker run --rm -it achillesrasquinha/shank "$@"

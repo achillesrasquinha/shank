@@ -1,8 +1,8 @@
 # imports - compatibility imports
-from pipupgrade._compat     import zip_longest, string_types
+from shank._compat     import zip_longest, string_types
 
 # imports - module imports
-from pipupgrade.util.string import strip_ansi
+from shank.util.string import strip_ansi
 
 def _sanitize_string(string):
     """

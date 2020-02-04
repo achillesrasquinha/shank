@@ -4,8 +4,8 @@ import fnmatch
 import glob
 
 # imports - module imports
-from pipupgrade import log
-from pipupgrade.util.string import strip
+from shank import log
+from shank.util.string import strip
 
 logger = log.get_logger()
 

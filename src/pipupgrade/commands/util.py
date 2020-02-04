@@ -1,6 +1,6 @@
 # imports - module imports
-from pipupgrade.cli.parser import get_args
-from pipupgrade import cli
+from shank.cli.parser import get_args
+from shank import cli
 
 def cli_format(string, type_):
     args = get_args(as_dict = False)

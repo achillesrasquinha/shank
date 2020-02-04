@@ -1,12 +1,12 @@
 # imports - module imports
-from pipupgrade._compat import (cmp, input, StringIO, iteritems, iterkeys,
+from shank._compat import (cmp, input, StringIO, iteritems, iterkeys,
     itervalues, PYTHON_VERSION, _is_python_version, Iterable)
 
 # imports - test imports
 from testutils import mock_input, assert_input
 
 def test_imports():
-    from pipupgrade._compat import (
+    from shank._compat import (
         StringIO    as _,
 
         urlopen     as _,

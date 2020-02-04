@@ -1,6 +1,6 @@
 # imports - compatibility imports
 from __future__ import print_function
-from pipupgrade._compat import input
+from shank._compat import input
 
 # imports - standard imports
 import sys, os
@@ -8,10 +8,10 @@ import platform
 import inspect
 
 # imports - module imports
-from pipupgrade._compat         import EX_OK
-from pipupgrade.util.imports    import import_handler
-from pipupgrade.util.system     import write
-from pipupgrade.util.string     import strip_ansi
+from shank._compat         import EX_OK
+from shank.util.imports    import import_handler
+from shank.util.system     import write
+from shank.util.string     import strip_ansi
 
 _ACCEPTABLE_INPUTS_YES      = ("", "y", "Y")
 _ACCEPTABLE_INPUTS_QUIT     = ("q", "Q")

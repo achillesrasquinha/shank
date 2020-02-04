@@ -1,5 +1,5 @@
 # imports - module imports
-from pipupgrade.util.types import (
+from shank.util.types import (
     get_function_arguments
 )
 

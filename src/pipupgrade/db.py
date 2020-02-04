@@ -3,10 +3,10 @@ import os.path as osp
 import sqlite3
 
 # imports - module imports
-from pipupgrade.__attr__    import __name__ as NAME
-from pipupgrade.util.string import strip
-from pipupgrade.util.system import makedirs, read
-from pipupgrade             import config, log
+from shank.__attr__    import __name__ as NAME
+from shank.util.string import strip
+from shank.util.system import makedirs, read
+from shank             import config, log
 
 logger = log.get_logger()
 

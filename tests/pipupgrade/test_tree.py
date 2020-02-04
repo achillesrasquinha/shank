@@ -2,8 +2,8 @@
 import pytest
 
 # imports - module imports
-from pipupgrade.tree    import Node
-from pipupgrade._compat import string_types
+from shank.tree    import Node
+from shank._compat import string_types
 
 def test_node():
     tree1 = Node("foo")

@@ -19,7 +19,7 @@ except ImportError:
     from pip.req           import parse_requirements # pip 9
 
 # globals
-PACKAGE     = "pipupgrade"
+PACKAGE     = "shank"
 SRCDIR      = "src"
 
 def isdef(var):

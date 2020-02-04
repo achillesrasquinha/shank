@@ -1,8 +1,8 @@
 # imports - module imports
-from pipupgrade.cli.util   import *
-from pipupgrade.cli.parser import get_args
-from pipupgrade.util._dict import merge_dict
-from pipupgrade.util.types import get_function_arguments
+from shank.cli.util   import *
+from shank.cli.parser import get_args
+from shank.util._dict import merge_dict
+from shank.util.types import get_function_arguments
 
 def command(fn):
     args    = get_args()

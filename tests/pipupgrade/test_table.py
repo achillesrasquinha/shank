@@ -1,6 +1,6 @@
 # imports - module imports
-from pipupgrade       import cli
-from pipupgrade.table import _sanitize_string, Table
+from shank       import cli
+from shank.table import _sanitize_string, Table
 
 def test__sanitize_string():
     assert _sanitize_string(cli.format("foobar", cli.GREEN)) == "foobar"

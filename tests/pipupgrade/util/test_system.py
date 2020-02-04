@@ -7,9 +7,9 @@ from   distutils.spawn import find_executable
 import pytest
 
 # imports - module imports
-from pipupgrade.util.system import (read, write, popen, which, makedirs,
+from shank.util.system import (read, write, popen, which, makedirs,
     environment, touch)
-from pipupgrade._compat     import string_types
+from shank._compat     import string_types
 
 def test_read(tmpdir):
     directory = tmpdir.mkdir("tmp")

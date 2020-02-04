@@ -1,31 +1,32 @@
 <div align="center">
+  <img src=".github/assets/meme.jpg">
   <h1>
-    pipupgrade
+    shank
   </h1>
-  <h4>The missing command for <code>pip</code></h4>
+  <h4>A Python Popen that does not suck.</h4>
 </div>
 
 <p align="center">
-    <a href="https://travis-ci.org/achillesrasquinha/pipupgrade">
-        <img src="https://img.shields.io/travis/achillesrasquinha/pipupgrade.svg?style=flat-square">
+    <a href="https://travis-ci.org/achillesrasquinha/shank">
+        <img src="https://img.shields.io/travis/achillesrasquinha/shank.svg?style=flat-square">
     </a>
-    <a href="https://ci.appveyor.com/project/achillesrasquinha/pipupgrade">
-        <img src="https://img.shields.io/appveyor/ci/achillesrasquinha/pipupgrade.svg?style=flat-square&logo=appveyor">
+    <a href="https://ci.appveyor.com/project/achillesrasquinha/shank">
+        <img src="https://img.shields.io/appveyor/ci/achillesrasquinha/shank.svg?style=flat-square&logo=appveyor">
     </a>
-    <a href="https://coveralls.io/github/achillesrasquinha/pipupgrade">
-        <img src="https://img.shields.io/coveralls/github/achillesrasquinha/pipupgrade.svg?style=flat-square">
+    <a href="https://coveralls.io/github/achillesrasquinha/shank">
+        <img src="https://img.shields.io/coveralls/github/achillesrasquinha/shank.svg?style=flat-square">
     </a>
-    <a href="https://pypi.org/project/pipupgrade/">
-		<img src="https://img.shields.io/pypi/v/pipupgrade.svg?style=flat-square">
+    <a href="https://pypi.org/project/shank/">
+		<img src="https://img.shields.io/pypi/v/shank.svg?style=flat-square">
 	</a>
-    <a href="https://pypi.org/project/pipupgrade/">
-		<img src="https://img.shields.io/pypi/l/pipupgrade.svg?style=flat-square">
+    <a href="https://pypi.org/project/shank/">
+		<img src="https://img.shields.io/pypi/l/shank.svg?style=flat-square">
 	</a>
-    <a href="https://pypi.org/project/pipupgrade/">
-		<img src="https://img.shields.io/pypi/pyversions/pipupgrade.svg?style=flat-square">
+    <a href="https://pypi.org/project/shank/">
+		<img src="https://img.shields.io/pypi/pyversions/shank.svg?style=flat-square">
 	</a>
-    <a href="https://hub.docker.com/r/achillesrasquinha/pipupgrade">
-		<img src="https://img.shields.io/docker/cloud/build/achillesrasquinha/pipupgrade.svg?style=flat-square&logo=docker">
+    <a href="https://hub.docker.com/r/achillesrasquinha/shank">
+		<img src="https://img.shields.io/docker/cloud/build/achillesrasquinha/shank.svg?style=flat-square&logo=docker">
 	</a>
     <a href="https://git.io/boilpy">
       <img src="https://img.shields.io/badge/made%20with-boilpy-red.svg?style=flat-square">
@@ -63,68 +64,68 @@
 * [View Dependency Graph.](FAQ.md/#how-do-i-view-a-dependency-graph)
 * Parallel updates (blazingly fast).
 * Python 2.7+ and Python 3.4+ compatible. Also pip 9+, pip 10+, pip 18+ and [pip 19.0.1+](https://github.com/pypa/pip/issues/6158) compatible.
-* Automate your Dependencies by installing `pipupgrade` in your CI workflow.
+* Automate your Dependencies by installing `shank` in your CI workflow.
 * Zero Dependencies!
 
 ### Installation
 
 ```shell
-$ pip install pipupgrade
+$ pip install shank
 ```
 
 ### Usage
 
 #### Basic Usage
 
-* [**`pipupgrade`**](https://git.io/pipupgrade)
+* [**`shank`**](https://git.io/shank)
 
 *Upgrades all the packages across all detected pip environments.*
 
-* [**`pipupgrade --self`**](https://git.io/pipupgrade)
+* [**`shank --self`**](https://git.io/shank)
 
-*Upgrades `pipupgrade`.*
+*Upgrades `shank`.*
 
-* [**`pipupgrade --format {table,tree,json,yaml}`**](https://git.io/pipupgrade)
+* [**`shank --format {table,tree,json,yaml}`**](https://git.io/shank)
 
 *Display packages in the format (defaults to `table`)*
 
-* [**`pipupgrade --pip-path PIP_PATH`**](https://git.io/pipupgrade)
+* [**`shank --pip-path PIP_PATH`**](https://git.io/shank)
 
 *Upgrades all the packages within the defined pip environment.*
 
-* [**`pipupgrade --check`**](https://git.io/pipupgrade)
+* [**`shank --check`**](https://git.io/shank)
 
 *Checks and pretty prints outdated packages (Does not perform upgrades).*
 
-* [**`pipupgrade --latest`**](https://git.io/pipupgrade)
+* [**`shank --latest`**](https://git.io/shank)
 
 *WARNING: Upgrades all packages (including the ones that break change).*
 
-* [**`pipupgrade --all`**](https://git.io/pipupgrade)
+* [**`shank --all`**](https://git.io/shank)
 
 *List all packages.*
 
-* [**`pipupgrade --interactive`**](https://git.io/pipupgrade)
+* [**`shank --interactive`**](https://git.io/shank)
 
 *Prompts confirmation dialog for each package to be upgraded.*
 
-* [**`pipupgrade --requirements REQUIREMENTS`**](https://git.io/pipupgrade)
+* [**`shank --requirements REQUIREMENTS`**](https://git.io/shank)
 
 *Upgrades the requirements file (if required).*
 
-* [**`pipupgrade --pipfile PIPFILE`**](https://git.io/pipupgrade)
+* [**`shank --pipfile PIPFILE`**](https://git.io/shank)
 
 *Upgrades the Pipfile and Pipfile.lock file (if required).*
 
-* [**`pipupgrade --project PROJECT`**](https://git.io/pipupgrade)
+* [**`shank --project PROJECT`**](https://git.io/shank)
 
 *Upgrades all the requirements file and/or Pipfile/Pipfile.lock within a project directory.*
 
 That's basically it! Run the help for more details...
 
 ```
-$ pipupgrade --help
-usage: pipupgrade [--pip-path PIP_PATH] [-y] [-c] [-l]
+$ shank --help
+usage: shank [--pip-path PIP_PATH] [-y] [-c] [-l]
                   [-f {table,tree,json,yaml}] [-a] [--pip] [-s]
                   [-r REQUIREMENTS] [--pipfile PIPFILE] [-i] [-p PROJECT]
                   [--git-username GIT_USERNAME] [--git-email GIT_EMAIL]
@@ -136,7 +137,7 @@ usage: pipupgrade [--pip-path PIP_PATH] [-y] [-c] [-l]
                   [--force] [--no-color] [-V] [-v] [-h]
                   [packages [packages ...]]
 
-pipupgrade (v 1.6.6)
+shank (v 1.6.6)
 
 UPGRADE ALL THE PIP PACKAGES!
 
@@ -153,7 +154,7 @@ optional arguments:
                         Display packages format. (default: table)
   -a, --all             List all packages. (default: 0)
   --pip                 Update pip. (default: 0)
-  -s, --self            Update pipupgrade. (default: False)
+  -s, --self            Update shank. (default: False)
   -r REQUIREMENTS, --requirements REQUIREMENTS
                         Path(s) to requirements.txt file. (default: None)
   --pipfile PIPFILE     Path(s) to Pipfile (default: None)
@@ -187,24 +188,24 @@ optional arguments:
   --force               Force search for files within a project. (default: 0)
   --no-color            Avoid colored output. (default: 0)
   -V, --verbose         Display verbose output. (default: False)
-  -v, --version         Show pipupgrade's version number and exit.
+  -v, --version         Show shank's version number and exit.
   -h, --help            Show this help message and exit.
 ```
 
 ### Docker
 
-Using `pipupgrade`'s Docker Image to generate a Pull Request can be done as follows:
+Using `shank`'s Docker Image to generate a Pull Request can be done as follows:
 
 ```
 $ docker run \
-    -e "PIPUPGRADE_GIT_USERNAME=<YOUR_GIT_USERNAME>" \
-    -e "PIPUPGRADE_GIT_EMAIL=<YOUR_GIT_EMAIL>" \
-    -e "PIPUPGRADE_GITHUB_REPONAME=<YOUR_GIT_REPONAME>" \
-    -e "PIPUPGRADE_GITHUB_USERNAME=<YOUR_GIT_USERNAME>" \
+    -e "shank_GIT_USERNAME=<YOUR_GIT_USERNAME>" \
+    -e "shank_GIT_EMAIL=<YOUR_GIT_EMAIL>" \
+    -e "shank_GITHUB_REPONAME=<YOUR_GIT_REPONAME>" \
+    -e "shank_GITHUB_USERNAME=<YOUR_GIT_USERNAME>" \
     --rm \
     -it \
     -v $(pwd):/path/to/project \
-      achillesrasquinha/pipupgrade \
+      achillesrasquinha/shank \
         --project /path/to/project \
         --pull-request \
         --force \
@@ -214,17 +215,13 @@ $ docker run \
 
 ### Similar Packages
 
-`pipupgrade` attempts to provide an all-in-one solution as compared to the following packages:
+`shank` attempts to provide an all-in-one solution as compared to the following packages:
 
 * [pur](https://github.com/alanhamlett/pip-update-requirements)
 * [pip_upgrade_outdated](https://github.com/defjaf/pip_upgrade_outdated)
 * [pipdate](https://github.com/nschloe/pipdate)
 * [pip-review](https://github.com/jgonggrijp/pip-review)
 * [pip-upgrader](https://github.com/simion/pip-upgrader)
-
-### Known Issues
-
-* [I'm stuck at "Checking..." forever.](https://github.com/achillesrasquinha/pipupgrade/issues/30)
 
 ### License
 

@@ -1,5 +1,5 @@
 # imports - module imports
-from pipupgrade.util._dict import (
+from shank.util._dict import (
     merge_dict,
     dict_from_list
 )

@@ -1,16 +1,16 @@
 # imports - compatibility imports
-from pipupgrade._compat import iteritems
+from shank._compat import iteritems
 
 # imports - standard imports
 import pip
 import json
 
 # imports - module imports
-from pipupgrade.util.system  import which, popen
-from pipupgrade.util.string  import kebab_case
-from pipupgrade.util.environ import value_to_envval
-from pipupgrade.util.array   import sequencify
-from pipupgrade              import log
+from shank.util.system  import which, popen
+from shank.util.string  import kebab_case
+from shank.util.environ import value_to_envval
+from shank.util.array   import sequencify
+from shank              import log
 
 logger = log.get_logger()
 

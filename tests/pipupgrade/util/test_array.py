@@ -1,5 +1,5 @@
 # imports - module imports
-from pipupgrade.util.array import (
+from shank.util.array import (
     compact,
     squash,
     flatten,

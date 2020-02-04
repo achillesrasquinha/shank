@@ -20,7 +20,7 @@ $ "<YOUR COMMAND HERE>"
 
 #### Logs
 
-*Please paste the logs using `pipupgrade --verbose`*
+*Please paste the logs using `shank --verbose`*
 
 ```
 "<YOUR LOGS HERE>"

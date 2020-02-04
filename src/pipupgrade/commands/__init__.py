@@ -6,7 +6,7 @@ import multiprocessing as mp
 from   functools import partial
 
 # imports - module imports
-from pipupgrade.commands.helper import (
+from shank.commands.helper import (
 	get_registry_from_requirements,
 	get_registry_from_pip,
 	update_pip,
@@ -14,20 +14,20 @@ from pipupgrade.commands.helper import (
 	update_registry,
 	_DEPENDENCY_FORMATS
 )
-from pipupgrade.model           import Project
-from pipupgrade.model.project 	import get_included_requirements
-from pipupgrade.commands.util 	import cli_format
-from pipupgrade.util.array    	import flatten, sequencify
-from pipupgrade.util.system   	import (read, write, touch, popen, which,
+from shank.model           import Project
+from shank.model.project 	import get_included_requirements
+from shank.commands.util 	import cli_format
+from shank.util.array    	import flatten, sequencify
+from shank.util.system   	import (read, write, touch, popen, which,
 	environment
 )
-from pipupgrade.util.environ  	import getenvvar
-from pipupgrade.util.datetime 	import get_timestamp_str
-from pipupgrade 		      	import (_pip, request as req, cli,
+from shank.util.environ  	import getenvvar
+from shank.util.datetime 	import get_timestamp_str
+from shank 		      	import (_pip, request as req, cli,
 	log, parallel
 )
-from pipupgrade._compat			import builtins
-from pipupgrade.__attr__      	import __name__
+from shank._compat			import builtins
+from shank.__attr__      	import __name__
 
 logger = log.get_logger(level = log.DEBUG)
 

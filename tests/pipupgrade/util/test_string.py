@@ -1,7 +1,7 @@
 # imports - module imports
-from pipupgrade.util.string import (strip, strip_ansi, pluralize, kebab_case,
+from shank.util.string import (strip, strip_ansi, pluralize, kebab_case,
     safe_encode, safe_decode)
-from pipupgrade import cli
+from shank import cli
 
 def test_strip():
     string = "foobar"

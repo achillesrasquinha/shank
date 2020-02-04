@@ -2,7 +2,7 @@
 import logging
 
 # imports - module imports
-from pipupgrade.__attr__   import __name__ as NAME
+from shank.__attr__   import __name__ as NAME
 
 NOTSET      = logging.NOTSET
 DEBUG       = logging.DEBUG

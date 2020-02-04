@@ -5,17 +5,17 @@ import argparse
 import multiprocessing as mp
 
 # imports - module imports
-from pipupgrade.__attr__     import (
+from shank.__attr__     import (
     __name__,
     __version__,
     __description__,
     __command__
 )
-from pipupgrade.util.environ  import getenv
-from pipupgrade.cli           import util as _cli
-from pipupgrade.cli.formatter import ArgumentParserFormatter
-from pipupgrade.cli.util      import _CAN_ANSI_FORMAT
-from pipupgrade._pip          import _PIP_EXECUTABLES
+from shank.util.environ  import getenv
+from shank.cli           import util as _cli
+from shank.cli.formatter import ArgumentParserFormatter
+from shank.cli.util      import _CAN_ANSI_FORMAT
+from shank._pip          import _PIP_EXECUTABLES
 
 _DESCRIPTION_JUMBOTRON = \
 """

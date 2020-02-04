@@ -1,10 +1,10 @@
 # imports - module imports
-from pipupgrade.__attr__    import (
+from shank.__attr__    import (
     __name__,
     __version__,
     __author__
 )
-from pipupgrade.__main__    import main
-from pipupgrade.config      import Settings
+from shank.__main__    import main
+from shank.config      import Settings
 
 settings = Settings()

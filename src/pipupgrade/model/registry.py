@@ -3,13 +3,13 @@ import re
 from   functools import partial, cmp_to_key
 
 # imports - module imports
-from pipupgrade.model.package   import Package, _get_pip_info
-from pipupgrade                 import _pip, parallel
-from pipupgrade.util.array      import compact, flatten
-from pipupgrade.util.string     import kebab_case
-from pipupgrade._compat		    import iteritems, iterkeys, itervalues
-from pipupgrade.tree            import Node as TreeNode
-from pipupgrade.log             import get_logger
+from shank.model.package   import Package, _get_pip_info
+from shank                 import _pip, parallel
+from shank.util.array      import compact, flatten
+from shank.util.string     import kebab_case
+from shank._compat		    import iteritems, iterkeys, itervalues
+from shank.tree            import Node as TreeNode
+from shank.log             import get_logger
 
 logger = get_logger()
 
